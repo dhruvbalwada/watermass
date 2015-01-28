@@ -679,7 +679,7 @@ C -------- Total Tendency
      &     Ttendtot(i,j,kloc,bi,bj) + 
      &     dzfac * Tfac * layers_tottend(i,j,kci,1,bi,bj)
          Stendtot(i,j,kloc,bi,bj) = 
-     &     Ttendtot(i,j,kloc,bi,bj) + 
+     &     Stendtot(i,j,kloc,bi,bj) + 
      &     dzfac * Sfac * layers_tottend(i,j,kci,2,bi,bj)
         ENDDO
        ENDDO
