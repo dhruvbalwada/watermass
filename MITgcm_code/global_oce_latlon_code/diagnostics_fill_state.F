@@ -671,7 +671,7 @@ C     (previous fill for these diagnostics DID allow counter to be incremented)
              ENDDO
             ENDDO
            ENDDO
-           CALL DIAGNOSTICS_FILL(tmpMk,'TOT',0,Nr,-1,bi,bj,myThid)
+           CALL DIAGNOSTICS_FILL(tmpMk,'TOTTTEND',0,Nr,-1,bi,bj,myThid)
 #ifdef ALLOW_LAYERS
            IF ( useLayers ) THEN
              CALL LAYERS_FILL(tmpMk,1,'TOT',0,Nr,-1,bi,bj,myThid)
@@ -692,7 +692,7 @@ C     (previous fill for these diagnostics DID allow counter to be incremented)
              ENDDO
             ENDDO
            ENDDO
-           CALL DIAGNOSTICS_FILL(tmpMk,'TOT',0,Nr,-1,bi,bj,myThid)
+           CALL DIAGNOSTICS_FILL(tmpMk,'TOTSTEND',0,Nr,-1,bi,bj,myThid)
 #ifdef ALLOW_LAYERS
            IF ( useLayers ) THEN
             CALL LAYERS_FILL(tmpMk,2,'TOT',0,Nr,-1,bi,bj,myThid)

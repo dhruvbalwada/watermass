@@ -55,6 +55,7 @@ C     k        :: vertical index for model grid
 
       INTEGER bi, bj, iLa
       CHARACTER*(MAX_LEN_MBUF) suff
+
 #ifdef LAYERS_PRHO_REF
       INTEGER i, j, k
 #endif
@@ -215,19 +216,24 @@ C--   Direct Snap-shot output
 #endif /* LAYERS_PRHO_REF */
 #ifdef LAYERS_THERMODYNAMICS
 
-          CALL WRITE_FLD_3D_RL( 'layers_surfflux.', suff, Nr,
+            CALL WRITE_FLD_3D_RL( 'layers_Ttottend.', suff, 2*Nr,
+C     &       layers_tottend(1-OLx,1-OLy,1,1,1,1),
+     &       layers_tottend,
+     &       myIter, myThid )
+
+           CALL WRITE_FLD_3D_RL( 'layers_surfflux.', suff, 2,
      &                           layers_surfflux, myIter, myThid )
-          CALL WRITE_FLD_3D_RL( 'layers_dfx.', suff, Nr,
+           CALL WRITE_FLD_3D_RL( 'layers_dfx.', suff, 2*Nr,
      &                           layers_dfx, myIter, myThid )
-          CALL WRITE_FLD_3D_RL( 'layers_dfy.', suff, Nr,
+          CALL WRITE_FLD_3D_RL( 'layers_dfy.', suff, 2*Nr,
      &                           layers_dfy, myIter, myThid )
-          CALL WRITE_FLD_3D_RL( 'layers_dfr.', suff, Nr,
+          CALL WRITE_FLD_3D_RL( 'layers_dfr.', suff, 2*Nr,
      &                           layers_dfr, myIter, myThid )
-          CALL WRITE_FLD_3D_RL( 'layers_afx.', suff, Nr,
+          CALL WRITE_FLD_3D_RL( 'layers_afx.', suff, 2*Nr,
      &                           layers_afx, myIter, myThid )
-          CALL WRITE_FLD_3D_RL( 'layers_afy.', suff, Nr,
+          CALL WRITE_FLD_3D_RL( 'layers_afy.', suff, 2*Nr,
      &                           layers_afy, myIter, myThid )
-          CALL WRITE_FLD_3D_RL( 'layers_afr.', suff, Nr,
+          CALL WRITE_FLD_3D_RL( 'layers_afr.', suff, 2*Nr,
      &                           layers_afr, myIter, myThid )
 #endif /* LAYERS_THERMODYNAMICS */
         ENDIF
