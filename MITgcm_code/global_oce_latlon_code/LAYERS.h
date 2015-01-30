@@ -165,6 +165,11 @@ C      layers_beta       :: alpha factor for density eqn (-drhodS/rho)
       _RL layers_afr(1-OLx:sNx+OLx,1-OLy:sNy+OLy,Nr,2,nSx,nSy)
       _RL layers_tottend(1-OLx:sNx+OLx,1-OLy:sNy+OLy,Nr,2,nSx,nSy)
 
+#ifdef SHORTWAVE_HEATING
+      COMMON /LAYERS_SW/ layers_sw
+      _RL layers_sw(1-OLx:sNx+OLx,1-OLy:sNy+OLy,Nr,1,nSx,nSy)
+#endif /* LAYERS_SHORTWAVE */
+
 #ifdef LAYERS_PRHO_REF
       COMMON /LAYERS_VAR_THERMODYNAMICS_PRHO/
      & layers_alpha, layers_beta

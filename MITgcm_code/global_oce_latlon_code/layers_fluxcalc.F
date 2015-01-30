@@ -644,6 +644,13 @@ C ------- We are in the surface layer
      &     StendSurf(i,j,kloc,bi,bj) + 
      &     Sfac * dzfac * layers_surfflux(i,j,1,2,bi,bj)
          ENDIF
+
+#ifdef SHORTWAVE_HEATING         
+          TtendSurf(i,j,kloc,bi,bj) =
+     &     TtendSurf(i,j,kloc,bi,bj) +
+     &     Tfac * dzfac * layers_sw(i,j,kci,1,bi,bj)
+#endif /* SHORTWAVE_HEATING */
+
 C ------- Diffusion
          TtendDiffh(i,j,kloc,bi,bj) =
      &     TtendDiffh(i,j,kloc,bi,bj) + dzfac * Tfac *
