@@ -51,6 +51,9 @@ C     downfac  :: mask for lower point
       INTEGER bi, bj
       INTEGER i,j,k,kdown,iTracer,kp1
       _RL fluxfac(2), downfac, tmpfac, swfracb(2)
+      CHARACTER*(MAX_LEN_MBUF) msgBuf
+      _RL minusone
+      PARAMETER (minusOne=-1.)
 
 C --  These factors convert the units of TFLUX and SFLUX diagnostics
 C --  back to surfaceForcingT and surfaceForcingS units
@@ -123,18 +126,29 @@ C -- Advection
                 swfracb(1)=abs(rF(k))
                 swfracb(2)=abs(rF(k+1))
                 CALL SWFRAC(
-     I             2, -1.0,
+     I             2, minusOne,
      U             swfracb,
      I             1.0, 1, myThid )
-                kp1 = k+1
+C  ----- debuggin
+C                IF ((i.EQ.0).AND.(j.EQ.0)) THEN
+C                  WRITE(msgBuf,'(2A,I3,A,F6.2,A,F6.2)')
+C     &             'S/R LAYERS_THERMODYNAMICS:',
+C     &             ' k=', k,
+C     &             ' swfracb(1)=', swfracb(1),
+C     &             ' swfracb(2)=', swfracb(2)
+C                  CALL PRINT_MESSAGE( msgBuf, standardMessageUnit,
+C     &                         SQUEEZE_RIGHT, myThid )
+C                ENDIF
+C            --- kdown == kp1
+C                kp1 = k+1
                 IF (k.EQ.Nr) THEN
-                  kp1 = k
+C                  kp1 = k
                   swfracb(2)=0. _d 0
                 ENDIF
-                layers_sw(i,j,kdown,iTracer,bi,bj) =
-     &            layers_sw(i,j,kdown,iTracer,bi,bj)
+                layers_sw(i,j,k,iTracer,bi,bj) =
+     &            layers_sw(i,j,k,iTracer,bi,bj)
      &            -Qsw(i,j,bi,bj)*(swfracb(1)*maskC(i,j,k,bi,bj)
-     &                      -swfracb(2)*maskC(i,j,kp1, bi,bj))
+     &                      -swfracb(2)*maskC(i,j,kdown,bi,bj))
      &            *fluxfac(1)
      &            *recip_drF(k)*_recip_hFacC(i,j,k,bi,bj)
               ENDIF

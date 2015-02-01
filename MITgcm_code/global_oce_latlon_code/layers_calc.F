@@ -217,9 +217,10 @@ C--   Direct Snap-shot output
 #ifdef LAYERS_THERMODYNAMICS
 
             CALL WRITE_FLD_3D_RL( 'layers_Ttottend.', suff, 2*Nr,
-C     &       layers_tottend(1-OLx,1-OLy,1,1,1,1),
-     &       layers_tottend,
-     &       myIter, myThid )
+     &       layers_tottend, myIter, myThid )
+
+            CALL WRITE_FLD_3D_RL( 'layers_sw.', suff, Nr,
+     &       layers_sw, myIter, myThid )
 
            CALL WRITE_FLD_3D_RL( 'layers_surfflux.', suff, 2,
      &                           layers_surfflux, myIter, myThid )
@@ -273,6 +274,9 @@ C--   Reset temporary flux arrays to zero
               layers_afy     (i,j,k,iTracer,bi,bj) = 0. _d 0
               layers_afr     (i,j,k,iTracer,bi,bj) = 0. _d 0
               layers_tottend (i,j,k,iTracer,bi,bj) = 0. _d 0
+#ifdef SHORTWAVE_HEATING
+             layers_sw       (i,j,k,1      ,bi,bj) = 0. _d 0
+#endif /* SHORTWAVE_HEATING */
              ENDDO
             ENDDO
            ENDDO

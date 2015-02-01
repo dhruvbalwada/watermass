@@ -106,12 +106,16 @@ C     Loop through 3D layers variables:
          DO kg=1,Nr
           DO j=1-OLy,sNy+OLy
            DO i=1-OLx,sNx+OLx
+            layers_tottend (i,j,kg,iTracer,bi,bj) = 0. _d 0
             layers_dfx     (i,j,kg,iTracer,bi,bj) = 0. _d 0
             layers_dfy     (i,j,kg,iTracer,bi,bj) = 0. _d 0
             layers_dfr     (i,j,kg,iTracer,bi,bj) = 0. _d 0
             layers_afx     (i,j,kg,iTracer,bi,bj) = 0. _d 0
             layers_afy     (i,j,kg,iTracer,bi,bj) = 0. _d 0
             layers_afr     (i,j,kg,iTracer,bi,bj) = 0. _d 0
+#ifdef SHORTWAVE_HEATING
+            layers_sw      (i,j,kg,1      ,bi,bj) = 0. _d 0
+#endif /* SHORTWAVE_HEATING */
            ENDDO
           ENDDO
          ENDDO
