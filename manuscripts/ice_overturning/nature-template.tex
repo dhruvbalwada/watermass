@@ -1,0 +1,196 @@
+%% Template for a preprint Letter or Article for submission
+%% to the journal Nature.
+%% Written by Peter Czoschke, 26 February 2004
+%%
+
+\documentclass{naturemod}
+
+\usepackage{geometry} 
+\usepackage{graphicx}
+\usepackage{amssymb}
+%\usepackage{epstopdf}
+\usepackage{booktabs}
+%\usepackage{natbib}
+\usepackage{amsmath,bm}
+
+% style for partial derivative
+\newcommand{\pd}[2]{ \frac{\partial #1}{\partial #2} }
+%\newcommand{\pd}[2]{ \partial_{#2}#1 }
+\newcommand{\od}[2]{\ensuremath{\frac{d #1}{d #2}}}
+\newcommand{\td}[2]{\ensuremath{\frac{D #1}{D #2}}}
+\newcommand{\ab}[1]{\ensuremath{\langle #1 \rangle}}
+%\newcommand{\dab}[1]{\ensuremath{\llangle #1 \rrangle}}
+\newcommand{\bss}[1]{\textsf{\textbf{#1}}}
+\newcommand{\ol}{\ensuremath{\overline}}
+\newcommand{\olx}[1]{\ensuremath{\overline{#1}^x}}
+\newcommand{\nms}{\ensuremath{\mbox{ N m}^{-2}}}
+\newcommand{\wms}{\ensuremath{\mbox{ W m}^{-2}}}
+\newcommand{\mms}{\ensuremath{\mbox{ m}^2 \mbox{ s}^{-1}}}
+\newcommand{\mss}{\ensuremath{\mbox{ m s}^{-2}}}
+\newcommand{\ihat}{\hat{\textbf{\i}}}
+\newcommand{\jhat}{\hat{\textbf{\j}}}
+\newcommand{\orho}{\frac{1}{\rho_0}}
+
+
+%% make sure you have the nature.cls and naturemag.bst files where
+%% LaTeX can find them
+
+\bibliographystyle{naturemag}
+
+\title{Antarctic Sea Ice Drift Sustains Global Overturning Circluation}
+
+%% Notice placement of commas and superscripts and use of &
+%% in the author list
+
+\author{Ryan Abernathey$^2$, Paul Holland$^2$ , Emily Newsom$^3$,
+		Matt Mazloff$^4$, Ivana Cerovecki$^4$, \& Lynne Talley$^5$}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{affiliations}
+ \item Lamont Doherty Earth Observatory of Columbia University
+ \item British Antarctic Survey
+ \item University of Washington
+ \item Scripps Institution of Oceanography
+\end{affiliations}
+
+\begin{abstract}
+The ocean's overturning circulation transports water in and out of the otherwise isolated deep ocean. Because the deep ocean is capable of storing large quantities of heat and carbon, the overturning circulation has been shown to play a central role in long-term climate fluctuations such as ice ages and will also regulate the future evolution of Earth's climate under anthropogenic change\citep{SigmanBoyle2000,ToggweilerRussell2008}. An important component in the global overturning ``conveyor belt'' is Southern Ocean upwelling; the steeply sloping density surfaces of the Antarctic Circumpolar Current allow circumpolar deep water to travel adiabatically from the interior to the surface, where its density can be modified through air-sea interaction. Here we show that freshwater fluxes produced by freezing and melting sea ice account for a large fraction of the density transformation of upwelling circumpolar deep water, and that these fluxes depend heavily on sea-ice drift away from Antarctica. This suggests a new an important role for Antarctic sea ice in the ocean overturning circulation and global climate system.
+\end{abstract}
+
+% papers about salinity
+% ToggweilerSamuels1995b - Effect of Sea Ice on the Salinity of Antarctic Bottom Waters - talks about the competing effects of brine rejections and precip / runoff. Very relevant, with good citations.  
+% ToggweilerSamuels1995 - Effect of Drake Passage on the global thermohaline circulation
+% Gill1973 - Circulation and bottom water production in the Weddell Sea
+
+
+The ocean is stratified in density, and as water circulates between the surface and the deep, its density must be modified thermodynamically. The buoyancy of seawater is determined by both temperature and salinity, and because of water's particular equation of state, salinity stratification tends to dominate at cold temperatures / high latitudes. In the Southern Ocean, the transition between temperature stratification and salinity stratification occurs near the Polar Front. This means that 
+
+It has long been known that deep waters are formed in the high-latitude North Atlantic and Southern Oceans. These abyssal water masses, known as North Atlantic Deep water (NADW) and Antarctic Bottom Water (AABW) represent most of the ocean volume.
+
+To examine the circulation and air-ice-ocean fluxes in an integrated way, we employ the Southern Ocean State Estimate (SOSE), a high resolution general circulation model that has been constrained, via an adjoint method, to nearly all available observations in the 2005-2011 period (see {\em Methods} for details). This approach provides an optimal synthesis of the observations that is also consistent with physics. Crucially, SOSE includes a dynamic sea ice model which shows strong agreement with observed sea ice thickness, concentration, and velocity data, meaning it can provide an accurate estimate of the freshwater budget (see supplementary material for model validation).
+
+The impact of sea ice redistribution can be assessed by comparing the freshwater flux leaving the atmosphere and land (runoff) with that entering the ocean; the difference is due to sea ice redistribution. Redistribution encompasses two distinct processes: 1) freshwater is frozen out of seawater (i.e.~``brine rejection''), transported laterally, and then melted; 2) precipitation (chiefly snow) falls onto the ice, is transported laterally, and then melted. Fig.~1 shows the freshwater flux from the atmosphere, the effect of sea ice redistribution (ice motion vectors indicate the direction of transport), and the freshwater reaching the ocean. From the atmosphere, precipitation dominates over the Southern Ocean, leading to a broadly distributed positive freshwater flux with a characteristic magnitude of 0.5 m / year, and runoff provides a stronger freshwater source near the Antarctic coast. But sea ice redistribution reverses the sign of the freshwater flux near the coast, both through brine rejection and simply by intercepting falling snow. Freshwater is then transported away from Antarctica and melted near the polar front, where the melt flux equals or exceeds the precipitation. As a result, the net freshwater flux to the ocean closely resembles the redistribution flux, with much stronger gradients than the atmospheric fluxes could produce.
+
+\begin{figure}
+\begin{center}
+\includegraphics{../../figures_ice_moc/fw_flux_3.pdf}
+\caption{Mean freshwater fluxes from SOSE for the period 2005-2011. The Left panel shows the flux leaving the atmosphere and land, the and right panel shows the flux entering the ocean. The center panel shows the sea ice redistribution flux, with vectors indicating the lateral sea ice thickness transport.}
+\label{default}
+\end{center}
+\end{figure}
+
+To quantify the impact of freshwater redistribution on ocean circulation, we calculate the surface water mass transformation due to heat and freshwater fluxes (see {\em Methods} for details). The transformation rate quantifies the rate at which a given water mass (here defined by its potential density), is made lighter (negative transformation rate) or denser (positive) due to diabatic processes. If the transformation rate is is convergent or divergent at a particular density class, water must be subducted to or upwelled from the interior in order to satisfy mass continuity. Water mass transformation thus provides a quantitative link between between surface fluxes and overturning circulation. The transformation rates in SOSE are plotted in Fig.~2. The overturning circulation can readily be deduced from the net transformation rate; nearly 40 Sv of Circumpolar Deep Water upwell between densities $\sigma_\theta =  26.9$ and $\sigma_\theta = 27.5$. Water lighter than $\sigma_\theta=27.4$ is transformed into lighter water; this represents the so-called ``upper branch'' of the overturning circulation. Water denser than $\sigma_\theta=27.4$ is made denser, eventually becoming Antarctic Bottom Water. It is noteworthy that heat fluxes play a secondary role; the overall structure and magnitude of the net transformation primarily reflects the freshwater fluxes.
+
+To highlight the important role of sea ice freshwater redistribution, in Fig.~2 we split the freshwater-induced transformation into an atmospheric component and a redistribution component. The sea ice redistribution is responsible for all of the freshwater loss and resulting densification (15 Sv) in the Antarctic zone and contributes significantly to the freshwater gain and lightening (10 Sv) in the upper branch. This effect is comparable in magnitude the transformation by heat fluxes and, moreover, strongly modulates the spatial structure of water mass transformation. Without sea ice redistribution, dense antarctic water would not be formed at all, and the transformation of upwelling CDW would look very different.
+
+\begin{figure}
+\begin{center}
+\includegraphics{../../figures_ice_moc/transformation.pdf}
+\caption{Density transformation rates due to surface heat and freshwater fluxes, and their sum, the net surface transformation rate. The freshwater flux is further decomposed into an atmospheric component and a sea-ice redistribution component, which sum to give the total freshwater transformation rate.}
+\label{default}
+\end{center}
+\end{figure}
+
+The implication of our findings is that sea ice freshwater redistribution must play a central role in the global ocean overturning system. Much interest and effort has focused on the {\em extent} of sea ice: its recent history, its expected trends with climate change, and its variability in paleoclimate. For ocean circulation, however, the freshwater flux, rather than the ice extent, is the most relevant quantity; the two are related but not necessarily proportional. The sea ice extent is constrained by the water and air temperature, but the winds play the dominant role in driving ice motion. We speculate that wind-driven variability in sea ice transport can drive substantial variability in ocean overturning circulation. Therefore, a key question for both past and future ocean circulation is whether the sea-ice redistribution freshwater flux has undergone substantial changes. (bad)
+
+
+
+\section*{Methods}
+
+\section*{Supplementary Material}
+
+\begin{align}
+&\od{}{t}FW_{atm} & = &- F_{A \to O} & -F_{A \to I}  & \ 		  & \\
+&\od{}{t}FW_{ice}  & = & \		       & + F_{A \to I} & - F_{I \to O}& \\
+&\od{}{t}FW_{oc}  & =  & F_{A \to O}  & \                  & + F_{I \to O}& 
+\end{align}
+
+It follows that
+\begin{equation}
+\od{}{t}FW_{ice} = -\od{}{t}FW_{atm} - \od{}{t}FW_{oc} 
+\end{equation}
+
+
+\section*{Another Section}
+
+Sections can only be used in Articles.  Contributions should be
+organized in the sequence: title, text, methods, references,
+Supplementary Information line (if any), acknowledgements,
+interest declaration, corresponding author line, tables, figure
+legends.
+
+Spelling must be British English (Oxford English Dictionary)
+
+In addition, a cover letter needs to be written with the
+following:
+\begin{enumerate}
+ \item A 100 word or less summary indicating on scientific grounds
+why the paper should be considered for a wide-ranging journal like
+\textsl{Nature} instead of a more narrowly focussed journal.
+ \item A 100 word or less summary aimed at a non-scientific audience,
+written at the level of a national newspaper.  It may be used for
+\textsl{Nature}'s press release or other general publicity.
+ \item The cover letter should state clearly what is included as the
+submission, including number of figures, supporting manuscripts
+and any Supplementary Information (specifying number of items and
+format).
+ \item The cover letter should also state the number of
+words of text in the paper; the number of figures and parts of
+figures (for example, 4 figures, comprising 16 separate panels in
+total); a rough estimate of the desired final size of figures in
+terms of number of pages; and a full current postal address,
+telephone and fax numbers, and current e-mail address.
+\end{enumerate}
+
+See \textsl{Nature}'s website
+(\texttt{http://www.nature.com/nature/submit/gta/index.html}) for
+complete submission guidelines.
+
+\begin{methods}
+Put methods in here.  If you are going to subsection it, use
+\verb|\subsection| commands.  Methods section should be less than
+800 words and if it is less than 200 words, it can be incorporated
+into the main text.
+
+\subsection{Method subsection.}
+
+Here is a description of a specific method used.  Note that the
+subsection heading ends with a full stop (period) and that the
+command is \verb|\subsection{}| not \verb|\subsection*{}|.
+
+\end{methods}
+
+%% Put the bibliography here, most people will use BiBTeX in
+%% which case the environment below should be replaced with
+%% the \bibliography{} command.
+
+\begin{thebibliography}{1}
+\bibitem{dummy} Articles are restricted to 50 references, Letters
+to 30.
+\bibitem{dummyb} No compound references -- only one source per
+reference.
+\end{thebibliography}
+
+
+%% Here is the endmatter stuff: Supplementary Info, etc.
+%% Use \item's to separate, default label is "Acknowledgements"
+
+\begin{addendum}
+ \item Put acknowledgements here.
+ \item[Competing Interests] The authors declare that they have no
+competing financial interests.
+ \item[Correspondence] Correspondence and requests for materials
+should be addressed to A.B.C.~(email: myaddress@nowhere.edu).
+\end{addendum}
+
+%%
+%% TABLES
+%%
+%% If there are any tables, put them here.
+%%
+
+\end{document}
