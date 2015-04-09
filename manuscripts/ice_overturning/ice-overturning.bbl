@@ -1,0 +1,169 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{SarmientoToggweiler1984}
+\bibinfo{author}{Sarmiento, J.~L.} \& \bibinfo{author}{Toggweiler, J.~R.}
+\newblock \bibinfo{title}{A new model for the role of the oceans in determining
+  atmospheric pco2}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{308}},
+  \bibinfo{pages}{621--624} (\bibinfo{year}{1984}).
+
+\bibitem{SigmanBoyle2000}
+\bibinfo{author}{Sigman, D.} \& \bibinfo{author}{Boyle, E.}
+\newblock \bibinfo{title}{Glacial/interglacial variations in atmospheric carbon
+  dioxide}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{407}},
+  \bibinfo{pages}{859--869} (\bibinfo{year}{2000}).
+
+\bibitem{ToggweilerRussell2008}
+\bibinfo{author}{Toggweiler, R.} \& \bibinfo{author}{Russell, J.}
+\newblock \bibinfo{title}{Ocean circulation in a warming climate}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{451}},
+  \bibinfo{pages}{286--288} (\bibinfo{year}{2008}).
+
+\bibitem{ToggweilerSamuels1995}
+\bibinfo{author}{Toggweiler, R.} \& \bibinfo{author}{Samuels, B.}
+\newblock \bibinfo{title}{Effect of {Drake Passage} on the global thermohaline
+  circulation}.
+\newblock \emph{\bibinfo{journal}{Deep Sea Res. I}}
+  \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{477--500}
+  (\bibinfo{year}{1995}).
+
+\bibitem{WolfeCessi2011}
+\bibinfo{author}{Wolfe, C.} \& \bibinfo{author}{Cessi, P.}
+\newblock \bibinfo{title}{The adiabatic pole-to-pole overturning circulation}.
+\newblock \emph{\bibinfo{journal}{J. Phys. Oceanogr.}}
+  \textbf{\bibinfo{volume}{41}}, \bibinfo{pages}{1795--1810}
+  (\bibinfo{year}{2011}).
+
+\bibitem{NikurashinVallis2012}
+\bibinfo{author}{Nikurashin, M.} \& \bibinfo{author}{Vallis, G.}
+\newblock \bibinfo{title}{A theory of the interhemispheric meridional
+  overturning circulation and associated stratification}.
+\newblock \emph{\bibinfo{journal}{J. Phys. Oceanogr.}}
+  \textbf{\bibinfo{volume}{42}}, \bibinfo{pages}{1652--1667}
+  (\bibinfo{year}{2012}).
+
+\bibitem{Broecker1991}
+\bibinfo{author}{Broecker, W.~S.}
+\newblock \bibinfo{title}{The great ocean conveyor}.
+\newblock \emph{\bibinfo{journal}{Oceanography}} \textbf{\bibinfo{volume}{4}},
+  \bibinfo{pages}{79--89} (\bibinfo{year}{1991}).
+
+\bibitem{StommelArons1959}
+\bibinfo{author}{Stommel, H.} \& \bibinfo{author}{Arons, A.~B.}
+\newblock \bibinfo{title}{On the abyssal circulation of the world ocean ii. an
+  idealized model of the circulation pattern and amplitude in oceanic basins}.
+\newblock \emph{\bibinfo{journal}{Deep Sea Research}}
+  \textbf{\bibinfo{volume}{6}}, \bibinfo{pages}{217--233}
+  (\bibinfo{year}{1959}).
+
+\bibitem{Munk1966}
+\bibinfo{author}{Munk, W.~H.}
+\newblock \bibinfo{title}{Abyssal recipes}.
+\newblock \emph{\bibinfo{journal}{Deep Sea Research and Oceanographic
+  Abstracts}} \textbf{\bibinfo{volume}{13}}, \bibinfo{pages}{707--730}
+  (\bibinfo{year}{1966}).
+
+\bibitem{Ferrari2014}
+\bibinfo{author}{Ferrari, R.}
+\newblock \bibinfo{title}{What goes down must come up}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{513}},
+  \bibinfo{pages}{179--180} (\bibinfo{year}{2014}).
+
+\bibitem{MarshallSpeer2012}
+\bibinfo{author}{Marshall, J.} \& \bibinfo{author}{Speer, K.}
+\newblock \bibinfo{title}{Closing the meridional overturning circulation
+  through {Southern Ocean} upwelling}.
+\newblock \emph{\bibinfo{journal}{Nature Geoscience}}
+  \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{171--180}
+  (\bibinfo{year}{2012}).
+
+\bibitem{Talley2013}
+\bibinfo{author}{Talley, L.~D.}
+\newblock \bibinfo{title}{Closure of the global overturning circulation through
+  the indian, pacific and southern oceans: schematics and transports}.
+\newblock \emph{\bibinfo{journal}{Oceanography}} \textbf{\bibinfo{volume}{26}},
+  \bibinfo{pages}{80--97} (\bibinfo{year}{2013}).
+
+\bibitem{MarinovEtAl2006}
+\bibinfo{author}{Marinov, I.}, \bibinfo{author}{Gnanadesikan, A.},
+  \bibinfo{author}{Toggweiler, J.~R.} \& \bibinfo{author}{Sarmiento, J.~L.}
+\newblock \bibinfo{title}{The {Southern Ocean} biogeochemical divide}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{441}},
+  \bibinfo{pages}{964--967} (\bibinfo{year}{2006}).
+
+\bibitem{Gill1973}
+\bibinfo{author}{Gill, A.~E.}
+\newblock \bibinfo{title}{Circulation and bottom water production in the
+  {Weddell Sea}}.
+\newblock \emph{\bibinfo{journal}{Deep Sea Res.}}
+  \textbf{\bibinfo{volume}{20}}, \bibinfo{pages}{111--140}
+  (\bibinfo{year}{1973}).
+
+\bibitem{RenEtAl2011}
+\bibinfo{author}{Ren, L.}, \bibinfo{author}{Speer, K.} \&
+  \bibinfo{author}{Chassignet, E.~P.}
+\newblock \bibinfo{title}{The mixed layer salinity budget and sea ice in the
+  {{Southern Ocean}}}.
+\newblock \emph{\bibinfo{journal}{J. Geophys. Res.}}
+  \textbf{\bibinfo{volume}{116}}, \bibinfo{pages}{C08031}
+  (\bibinfo{year}{2011}).
+
+\bibitem{HollandKwok2012}
+\bibinfo{author}{Holland, P.~R.} \& \bibinfo{author}{Kwok, R.}
+\newblock \bibinfo{title}{Wind-driven trends in {Antarctic} sea-ice drift}.
+\newblock \emph{\bibinfo{journal}{Nature Geoscience}}
+  \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{872--875}
+  (\bibinfo{year}{2012}).
+
+\bibitem{HollandEtAl2014}
+\bibinfo{author}{Holland, P.~R.} \emph{et~al.}
+\newblock \bibinfo{title}{Modeled trends in antarctic sea ice thickness}.
+\newblock \emph{\bibinfo{journal}{J. Climate}} \textbf{\bibinfo{volume}{27}},
+  \bibinfo{pages}{3784--3801} (\bibinfo{year}{2014}).
+
+\bibitem{PeixotoOort1992}
+\bibinfo{author}{Peix\'{o}to, J.~P.} \& \bibinfo{author}{Oort, A.~H.}
+\newblock \emph{\bibinfo{title}{Physics of climate}}
+  (\bibinfo{publisher}{American Institute of Physics}, \bibinfo{address}{New
+  York}, \bibinfo{year}{1992}).
+
+\bibitem{SchanzeEtAl2010}
+\bibinfo{author}{Schanze, J.}, \bibinfo{author}{Schmitt, R.~W.} \&
+  \bibinfo{author}{Yu, L.}
+\newblock \bibinfo{title}{The global oceanic freshwater cycle: A
+  state-of-the-art quantification}.
+\newblock \emph{\bibinfo{journal}{J. Marine Res.}}
+  \textbf{\bibinfo{volume}{68}}, \bibinfo{pages}{569--595}
+  (\bibinfo{year}{2010}).
+
+\bibitem{MarshallEtAl1999}
+\bibinfo{author}{Marshall, J.}, \bibinfo{author}{Jamous, D.} \&
+  \bibinfo{author}{Nilsson, J.}
+\newblock \bibinfo{title}{Reconciling thermodynamic and dynamic methods of
+  computation of water-mass transformation rates}.
+\newblock \emph{\bibinfo{journal}{Deep Sea Res. I}}
+  \textbf{\bibinfo{volume}{46}}, \bibinfo{pages}{545--572}
+  (\bibinfo{year}{1999}).
+
+\bibitem{LargeNurser2001}
+\bibinfo{author}{Large, W.~G.} \& \bibinfo{author}{Nurser, A. J.~G.}
+\newblock \bibinfo{title}{Ocean surface water mass transformation}.
+\newblock In \emph{\bibinfo{booktitle}{Ocean Circulation and Climate --
+  Observing and Modelling the Global Ocean}} (\bibinfo{publisher}{Academic
+  Press}, \bibinfo{year}{2001}).
+
+\bibitem{FerrariEtAl2014}
+\bibinfo{author}{Ferrari, R.} \emph{et~al.}
+\newblock \bibinfo{title}{Antarctic sea ice control on ocean circulation in
+  present and glacial climates}.
+\newblock \emph{\bibinfo{journal}{Proc. Natl. Acad. Sci.}}
+  \textbf{\bibinfo{volume}{111}}, \bibinfo{pages}{8753--8758}
+  (\bibinfo{year}{2014}).
+
+\end{thebibliography}
