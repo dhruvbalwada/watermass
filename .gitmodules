@@ -1,3 +1,6 @@
 [submodule "bibliography"]
 	path = bibliography
 	url = git@bitbucket.org:ryanaberanthey/bibliography.git
+[submodule "ice_transformation"]
+	path = manuscripts/ice_transformation
+	url = https://git.overleaf.com/2482645kvzmzf
