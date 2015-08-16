@@ -79,8 +79,8 @@ def plot_diapycnal_velocities(d, r=0.7e6, ylim = [28.2, 22], direct=False):
     Yc = m.yc[0,:,0]
     Xc = m.xc[0,0,:]
 
-    lb = d['la'].layers_bounds_w - 1000.
-    lbc = d['la'].layers_top - 1000.
+    lb = d['la'].layers_bounds_w
+    lbc = d['la'].layers_top
 
     plt.figure(figsize=(16,12))
 
